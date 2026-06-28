@@ -1,6 +1,6 @@
-"""analyzer_31eab2 - CLI application."""
+"""analyzer_cd3205 - CLI application."""
 import argparse, sys, time
-APP_NAME = "analyzer_31eab2"
+APP_NAME = "analyzer_cd3205"
 def parse_args():
     parser = argparse.ArgumentParser(description=APP_NAME)
     parser.add_argument("--verbose", "-v", action="store_true")
